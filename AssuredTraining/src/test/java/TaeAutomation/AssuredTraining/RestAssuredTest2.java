@@ -32,6 +32,4 @@ public class RestAssuredTest2 {
 		response.then().body(matchesJsonSchema(Paths.get(resourcePath).toUri())).log().body();
 
 	}
-	
-	@Test
 }
