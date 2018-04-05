@@ -1,0 +1,57 @@
+{
+  "$id": "https://jsonplaceholder.typicode.com/comments",
+  "type": "array",
+  "definitions": {},
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "items": {
+    "$id": "https://jsonplaceholder.typicode.com/comments/items",
+    "type": "object",
+    "properties": {
+      "postId": {
+        "$id": "https://jsonplaceholder.typicode.com/comments/items/properties/postId",
+        "type": "integer",
+        "title": "The Postid Schema ",
+        "default": 0,
+        "examples": [
+          1
+        ]
+      },
+      "id": {
+        "$id": "https://jsonplaceholder.typicode.com/comments/items/properties/id",
+        "type": "integer",
+        "title": "The Id Schema ",
+        "default": 0,
+        "examples": [
+          1
+        ]
+      },
+      "name": {
+        "$id": "https://jsonplaceholder.typicode.com/comments/items/properties/name",
+        "type": "string",
+        "title": "The Name Schema ",
+        "default": "",
+        "examples": [
+          "id labore ex et quam laborum"
+        ]
+      },
+      "email": {
+        "$id": "https://jsonplaceholder.typicode.com/comments/items/properties/email",
+        "type": "string",
+        "title": "The Email Schema ",
+        "default": "",
+        "examples": [
+          "Eliseo@gardner.biz"
+        ]
+      },
+      "body": {
+        "$id": "https://jsonplaceholder.typicode.com/comments/items/properties/body",
+        "type": "string",
+        "title": "The Body Schema ",
+        "default": "",
+        "examples": [
+          "laudantium enim quasi est quidem magnam voluptate ipsam eos\ntempora quo necessitatibus\ndolor quam autem quasi\nreiciendis et nam sapiente accusantium"
+        ]
+      }
+    }
+  }
+}

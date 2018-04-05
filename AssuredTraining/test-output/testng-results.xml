@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="6" passed="6">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="4519" started-at="2018-04-05T14:52:30Z" finished-at="2018-04-05T14:52:34Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="4519" started-at="2018-04-05T14:52:30Z" finished-at="2018-04-05T14:52:34Z">
+      <class name="TaeAutomation.AssuredTraining.RestAssuredTest2">
+        <test-method status="PASS" signature="testJsonResponseValidationPosts(java.lang.String, java.lang.String)[pri:0, instance:TaeAutomation.AssuredTraining.RestAssuredTest2@ae45eb6]" name="testJsonResponseValidationPosts" duration-ms="2314" started-at="2018-04-05T09:52:30Z" data-provider="DataProviderSchemas" finished-at="2018-04-05T09:52:32Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://jsonplaceholder.typicode.com/posts]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[resources/SchemaPosts.json]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testJsonResponseValidationPosts -->
+        <test-method status="PASS" signature="testJsonResponseValidationPosts(java.lang.String, java.lang.String)[pri:0, instance:TaeAutomation.AssuredTraining.RestAssuredTest2@ae45eb6]" name="testJsonResponseValidationPosts" duration-ms="736" started-at="2018-04-05T09:52:32Z" data-provider="DataProviderSchemas" finished-at="2018-04-05T09:52:33Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://jsonplaceholder.typicode.com/comments]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[resources/SchemaComments.json]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testJsonResponseValidationPosts -->
+        <test-method status="PASS" signature="testJsonResponseValidationPosts(java.lang.String, java.lang.String)[pri:0, instance:TaeAutomation.AssuredTraining.RestAssuredTest2@ae45eb6]" name="testJsonResponseValidationPosts" duration-ms="234" started-at="2018-04-05T09:52:33Z" data-provider="DataProviderSchemas" finished-at="2018-04-05T09:52:33Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://jsonplaceholder.typicode.com/albums]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[resources/SchemaAlbums.json]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testJsonResponseValidationPosts -->
+        <test-method status="PASS" signature="testJsonResponseValidationPosts(java.lang.String, java.lang.String)[pri:0, instance:TaeAutomation.AssuredTraining.RestAssuredTest2@ae45eb6]" name="testJsonResponseValidationPosts" duration-ms="761" started-at="2018-04-05T09:52:33Z" data-provider="DataProviderSchemas" finished-at="2018-04-05T09:52:34Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://jsonplaceholder.typicode.com/photos]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[resources/SchemaPhotos.json]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testJsonResponseValidationPosts -->
+        <test-method status="PASS" signature="testJsonResponseValidationPosts(java.lang.String, java.lang.String)[pri:0, instance:TaeAutomation.AssuredTraining.RestAssuredTest2@ae45eb6]" name="testJsonResponseValidationPosts" duration-ms="203" started-at="2018-04-05T09:52:34Z" data-provider="DataProviderSchemas" finished-at="2018-04-05T09:52:34Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://jsonplaceholder.typicode.com/todos]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[resources/SchemaTodos.json]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testJsonResponseValidationPosts -->
+        <test-method status="PASS" signature="testJsonResponseValidationPosts(java.lang.String, java.lang.String)[pri:0, instance:TaeAutomation.AssuredTraining.RestAssuredTest2@ae45eb6]" name="testJsonResponseValidationPosts" duration-ms="218" started-at="2018-04-05T09:52:34Z" data-provider="DataProviderSchemas" finished-at="2018-04-05T09:52:34Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://jsonplaceholder.typicode.com/users]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[resources/SchemaUsers.json]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testJsonResponseValidationPosts -->
+      </class> <!-- TaeAutomation.AssuredTraining.RestAssuredTest2 -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

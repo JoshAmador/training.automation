@@ -37,7 +37,7 @@ public class StarBucksTests extends BaseTests {
 
 	@Parameters({ "elementoCoffee", "elementoTea", "elementoMenu", "elementoCoffeeHouse", "elementoSocialImpact",
 			"elementoStarBucksRewards", "elementoBlog", "elementoGiftCards" })
-	@Test
+//	@Test
 	public void testStarBucksHome(String cafe, String tea, String menu, String casaCafe, String impactoSocial,
 			String rewards, String blog, String tarjetasRegalo) {
 		StarBucksHomePage starHome = getStarBucksHomePage();
