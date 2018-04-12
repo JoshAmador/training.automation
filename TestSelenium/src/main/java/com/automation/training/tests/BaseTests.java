@@ -1,5 +1,6 @@
 package com.automation.training.tests;
 
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Parameters;
@@ -23,9 +24,5 @@ public class BaseTests {
 	@AfterSuite(alwaysRun=true)
 	public void afterSuite() {
 		starHome.dispose();
-	}
-	
-	public StarBucksHomePage getStarBucksHomePage() {
-		return starHome;
 	}
 }

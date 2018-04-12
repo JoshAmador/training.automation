@@ -3,11 +3,13 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.automation.training.AnnotationTestsGoodCode">
+      <class name="com.automation.training.tests.StarBucksTests">
         <methods>
-          <include name="testConcactBueno"/>
+          <include name="testStarBucksHomeDataProvider"/>
+          <include name="test2"/>
+          <include name="afterSuite"/>
         </methods>
-      </class> <!-- com.automation.training.AnnotationTestsGoodCode -->
+      </class> <!-- com.automation.training.tests.StarBucksTests -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

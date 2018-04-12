@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<suite name="suiteRestAssured">
+
+	<test name="testAssuredParte1">
+		<classes>
+			<class name="TaeAutomation.AssuredTraining.RestAssuredTestParte1"></class>
+		</classes>
+	</test>
+
+	<test name="testAssuredParte2">
+		<classes>
+			<class name="TaeAutomation.AssuredTraining.RestAssuredTestParte2"></class>
+		</classes>
+	</test>
+	
+</suite>

@@ -1,30 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [My test suite]">
-  <parameter name="elementoCoffee" value="COFFEE"/>
-  <parameter name="elementoStarBucksRewards" value="STARBUCKS REWARDS"/>
-  <parameter name="elementoSocialImpact" value="SOCIAL IMPACT"/>
-  <parameter name="elementoBlog" value="BLOG"/>
   <parameter name="stringA" value="I love "/>
   <parameter name="stringB" value="test automation"/>
   <parameter name="browser" value="Chrome"/>
-  <parameter name="elementoMenu" value="MENU"/>
-  <parameter name="elementoTea" value="TEA"/>
-  <parameter name="elementoCoffeeHouse" value="COFFEEHOUSE"/>
-  <parameter name="elementoGiftCards" value="GIFT CARDS"/>
+  <parameter name="tabSend" value="Lighthearted and sunny"/>
   <listeners>
     <listener class-name="com.automation.training.MyCoolListener"/>
   </listeners>
   <test name="StarBucks home page(failed)">
-    <groups>
-      <run>
-        <include name="grupoConDataProvider"/>
-      </run>
-    </groups>
     <classes>
       <class name="com.automation.training.tests.StarBucksTests">
         <methods>
-          <include name="testStarBucksHomeDataProvider"/>
+          <include name="test2"/>
           <include name="afterSuite"/>
           <include name="beforeSuite"/>
         </methods>

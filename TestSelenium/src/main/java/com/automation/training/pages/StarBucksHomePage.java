@@ -1,30 +1,105 @@
 package com.automation.training.pages;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 
-public class StarBucksHomePage extends BasePage{
+public class StarBucksHomePage extends BasePage {
 
+	Actions mouseOver;
+	
 	public StarBucksHomePage(WebDriver driver) {
 		super(driver);
 		driver.get("https://www.starbucks.com/");
 	}
 
-	@FindBy(id="nav")
+	@FindBy(id = "nav")
 	private WebElement menuNavegacion;
-	
-	@FindBy(id="nav_coffee")
-	private WebElement tabCafe;
-	
-	public void buscarNav(String buscarNav) {
-		getWait().until(ExpectedConditions.visibilityOf(menuNavegacion));
-		tabCafe.getText();
-		System.out.println(menuNavegacion.getText());
-		
+
+	public WebElement getTabMenuNavegacion() {
+		return menuNavegacion;
+	}
+
+	@FindBy(id = "nav_coffee")
+	private WebElement tabCoffee;
+
+	public WebElement getTabCoffee() {
+		return tabCoffee;
+	}
+
+	@FindBy(id = "nav_menudrinkstea")
+	private WebElement tabTea;
+
+	public WebElement getTabTea() {
+		return tabTea;
+	}
+
+	@FindBy(id = "nav_menu")
+	private WebElement tabMenu;
+
+	public WebElement getTabMenu() {
+		return tabMenu;
+	}
+
+	@FindBy(id = "nav_coffeehouse")
+	private WebElement tabCoffeeHouse;
+
+	public WebElement getTabCoffeHouse() {
+		return tabCoffeeHouse;
+	}
+
+	@FindBy(id = "nav_responsibility")
+	private WebElement tabResponsibility;
+
+	public WebElement getTabResponsibility() {
+		return tabResponsibility;
+	}
+
+	@FindBy(id = "nav_starbucks_rewards")
+	private WebElement tabRewards;
+
+	public WebElement getTabRewards() {
+		return tabRewards;
+	}
+
+	@FindBy(id = "nav_blog")
+	private WebElement tabBlog;
+
+	public WebElement getTabBlog() {
+		return tabBlog;
+	}
+
+	@FindBy(id = "nav_gift_cards")
+	private WebElement tabGift;
+
+	public WebElement getTabGift() {
+		return tabGift;
 	}
 	
+	@FindBy(xpath = "//*[@id=\'menu_coffee\']/div[1]/ol/li[2]/p/a")
+	private WebElement findYourPerfectCoffeeButton;
+
+	public WebElement getFindYourPerfectCoffeeButton() {
+		return findYourPerfectCoffeeButton;
+	}
+	
+
+	public void buscarNav() {
+		getWait().until(ExpectedConditions.visibilityOf(menuNavegacion));
+	}
+	
+	public FindYourPerfectCoffeePage getFindYourPerfectCoffeePage() {
+		
+		mouseOver = new Actions(getDriver());
+		
+		mouseOver.moveToElement(tabCoffee);
+		mouseOver.moveToElement(findYourPerfectCoffeeButton);
+		mouseOver.click().perform();;
+		
+		return new FindYourPerfectCoffeePage(getDriver());
+		
+	}
+
 }

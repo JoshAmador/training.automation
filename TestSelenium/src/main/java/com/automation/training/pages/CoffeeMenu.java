@@ -9,6 +9,4 @@ public class CoffeeMenu extends BasePage{
 		driver.get("https://www.starbucks.com/coffee");
 	}
 	
-	@FindBy(id="nav_coffee")
-	
 }

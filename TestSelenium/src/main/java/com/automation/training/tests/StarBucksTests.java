@@ -1,9 +1,11 @@
 package com.automation.training.tests;
 
+import org.openqa.selenium.WebDriver;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
+import com.automation.training.pages.FindYourPerfectCoffeePage;
 import com.automation.training.pages.StarBucksHomePage;
 
 import junit.framework.Assert;
@@ -11,44 +13,37 @@ import junit.framework.Assert;
 public class StarBucksTests extends BaseTests {
 
 	// Con data provider
-
+	
+	StarBucksHomePage homePage;
+	
 	@DataProvider(name = "TabData")
 	public Object[][] crearTab() {
+		StarBucksHomePage homePage = new StarBucksHomePage(myDriver.getDriver());
 
 		return new Object[][] {
-			{new String("COFFEE"),"COFFEE"},
-			{new String("TEA"),"TEA"},
-			{new String("MENU"),"MENU"},
-			{new String("COFFEEHOUSE"),"COFFEEHOUSE"},
-			{new String("SOCIAL IMPACT"),"SOCIAL IMPACT"},
-			{new String("STARBUCKS REWARDS"),"STARBUCKS REWARDS"},
-			{new String("BLOG"),"BLOG"},
-			{new String("GIFT CARDS"),"GIFT CARDS"}
+			{homePage.getTabCoffee().getText(),"COFFEE"},
+			{homePage.getTabTea().getText(),"TEA"},
+			{homePage.getTabMenu().getText(),"MENU"},
+			{homePage.getTabCoffeHouse().getText(),"COFFEEHOUSE"},
+			{homePage.getTabResponsibility().getText(),"SOCIAL IMPACT"},
+			{homePage.getTabRewards().getText(),"STARBUCKS REWARDS"},
+			{homePage.getTabBlog().getText(),"BLOG"},
+			{homePage.getTabGift().getText(),"GIFT CARDS"}
 		};
 	}
 	
-	@Test(dataProvider = "TabData",groups = {"grupoConDataProvider"})
-	public void testStarBucksHomeDataProvider(String tabSend, String tabExpected) {
-		StarBucksHomePage starHome = getStarBucksHomePage();
-		starHome.buscarNav(tabSend);
-		
+	@Test(dataProvider = "TabData",priority = 1)
+	public void testStarBucksHomeDataProvider(String tabSend, String tabExpected) throws InterruptedException {
+		StarBucksHomePage starHome = new StarBucksHomePage(myDriver.getDriver());
+		starHome.buscarNav();
 		Assert.assertEquals(tabSend, tabExpected);
 	}
-
-	@Parameters({ "elementoCoffee", "elementoTea", "elementoMenu", "elementoCoffeeHouse", "elementoSocialImpact",
-			"elementoStarBucksRewards", "elementoBlog", "elementoGiftCards" })
-//	@Test
-	public void testStarBucksHome(String cafe, String tea, String menu, String casaCafe, String impactoSocial,
-			String rewards, String blog, String tarjetasRegalo) {
-		StarBucksHomePage starHome = getStarBucksHomePage();
-		Assert.assertEquals(cafe, "COFFEE");
-		Assert.assertEquals(tea, "TEA");
-		Assert.assertEquals(menu, "MENU");
-		Assert.assertEquals(casaCafe, "COFFEEHOUSE");
-		Assert.assertEquals(impactoSocial, "SOCIAL IMPACT");
-		Assert.assertEquals(rewards, "STARBUCKS REWARDS");
-		Assert.assertEquals(blog, "BLOG");
-		Assert.assertEquals(tarjetasRegalo, "GIFT CARDS");
+	
+	@Test(priority = 2)
+	public void test2() throws InterruptedException {
+		StarBucksHomePage starHome = new StarBucksHomePage(myDriver.getDriver());
+		FindYourPerfectCoffeePage findYourPerfectCoffeePage = starHome.getFindYourPerfectCoffeePage();
+		findYourPerfectCoffeePage.selectOptionsQuestion1();
 	}
-
+	
 }
