@@ -33,19 +33,19 @@ public class FindYourPerfectCoffeePage extends BasePage{
 
 //  WebElements de opcion 1
 	
-	public WebElement boton1Q1() {
+	public WebElement getBoton1Q1() {
 		return boton1Q1;
 	}
 	
-	public WebElement boton1Q2() {
+	public WebElement getBoton1Q2() {
 		return boton1Q2;
 	}
 	
-	public WebElement boton1Q3() {
+	public WebElement getBoton1Q3() {
 		return boton1Q3;
 	}
 	
-	public WebElement boton1Q4() {
+	public WebElement getBoton1Q4() {
 		return boton1Q4;
 	}
 	
@@ -104,7 +104,12 @@ public class FindYourPerfectCoffeePage extends BasePage{
 		mouseOver.click();
 		
 		mouseOver.moveToElement(botonBack);
-		mouseOver.click().perform();
+		
+		mouseOver.click();
+		
+		mouseOver.pause(1000);
+		
+		mouseOver.perform();
 		
 		Thread.sleep(3000);
 

@@ -48,7 +48,7 @@
                <version>2.18.1</version>
                <configuration>
                    <suiteXmlFiles> <!-- TestNG suite XML files --> 
-                     <suiteXmlFile>TestNG.xml</suiteXmlFile>
+                     <suiteXmlFile>suite/Suite.xml</suiteXmlFile>
                    </suiteXmlFiles>
                </configuration>
                                
