@@ -1,0 +1,57 @@
+{
+  "$id": "https://jsonplaceholder.typicode.com/photos",
+  "type": "array",
+  "definitions": {},
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "items": {
+    "$id": "https://jsonplaceholder.typicode.com/photos/items",
+    "type": "object",
+    "properties": {
+      "albumId": {
+        "$id": "https://jsonplaceholder.typicode.com/photos/items/properties/albumId",
+        "type": "integer",
+        "title": "The Albumid Schema ",
+        "default": 0,
+        "examples": [
+          1
+        ]
+      },
+      "id": {
+        "$id": "https://jsonplaceholder.typicode.com/photos/items/properties/id",
+        "type": "integer",
+        "title": "The Id Schema ",
+        "default": 0,
+        "examples": [
+          1
+        ]
+      },
+      "title": {
+        "$id": "https://jsonplaceholder.typicode.com/photos/items/properties/title",
+        "type": "string",
+        "title": "The Title Schema ",
+        "default": "",
+        "examples": [
+          "accusamus beatae ad facilis cum similique qui sunt"
+        ]
+      },
+      "url": {
+        "$id": "https://jsonplaceholder.typicode.com/photos/items/properties/url",
+        "type": "string",
+        "title": "The Url Schema ",
+        "default": "",
+        "examples": [
+          "http://placehold.it/600/92c952"
+        ]
+      },
+      "thumbnailUrl": {
+        "$id": "https://jsonplaceholder.typicode.com/photos/items/properties/thumbnailUrl",
+        "type": "string",
+        "title": "The Thumbnailurl Schema ",
+        "default": "",
+        "examples": [
+          "http://placehold.it/150/92c952"
+        ]
+      }
+    }
+  }
+}

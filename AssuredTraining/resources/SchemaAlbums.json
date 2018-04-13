@@ -1,0 +1,39 @@
+{
+  "$id": "https://jsonplaceholder.typicode.com/albums",
+  "type": "array",
+  "definitions": {},
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "items": {
+    "$id": "https://jsonplaceholder.typicode.com/albums/items",
+    "type": "object",
+    "properties": {
+      "userId": {
+        "$id": "https://jsonplaceholder.typicode.com/albums/items/properties/userId",
+        "type": "integer",
+        "title": "The Userid Schema ",
+        "default": 0,
+        "examples": [
+          1
+        ]
+      },
+      "id": {
+        "$id": "https://jsonplaceholder.typicode.com/albums/items/properties/id",
+        "type": "integer",
+        "title": "The Id Schema ",
+        "default": 0,
+        "examples": [
+          1
+        ]
+      },
+      "title": {
+        "$id": "https://jsonplaceholder.typicode.com/albums/items/properties/title",
+        "type": "string",
+        "title": "The Title Schema ",
+        "default": "",
+        "examples": [
+          "quidem molestiae enim"
+        ]
+      }
+    }
+  }
+}
