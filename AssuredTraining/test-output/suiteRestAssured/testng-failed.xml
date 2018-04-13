@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [suiteRestAssured]">
+  <test name="testAssuredParte2(failed)">
+    <classes>
+      <class name="TaeAutomation.AssuredTraining.RestAssuredTestParte2">
+        <methods>
+          <include name="testParamsPosts" invocation-numbers="0 1"/>
+        </methods>
+      </class> <!-- TaeAutomation.AssuredTraining.RestAssuredTestParte2 -->
+    </classes>
+  </test> <!-- testAssuredParte2(failed) -->
+</suite> <!-- Failed suite [suiteRestAssured] -->
