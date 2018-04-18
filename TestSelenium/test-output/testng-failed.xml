@@ -12,7 +12,7 @@
     <classes>
       <class name="com.automation.training.tests.StarBucksTests">
         <methods>
-          <include name="test2"/>
+          <include name="test2" invocation-numbers="0 1 2"/>
           <include name="afterSuite"/>
           <include name="beforeSuite"/>
         </methods>

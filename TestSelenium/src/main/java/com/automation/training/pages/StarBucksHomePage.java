@@ -85,9 +85,17 @@ public class StarBucksHomePage extends BasePage {
 		return findYourPerfectCoffeeButton;
 	}
 	
+	@FindBy(xpath="//*[@id=\'menu_gift_cards\']/div[1]/ol/li[1]/ol/li[1]/a")
+	private WebElement GiftbyEmail;
+	
+	public WebElement getGiftbyEmail() {
+		return GiftbyEmail;
+	}
 
-	public void buscarNav() {
+	public StarBucksHomePage buscarNav() {
 		getWait().until(ExpectedConditions.visibilityOf(menuNavegacion));
+		
+		return this;
 	}
 	
 	public FindYourPerfectCoffeePage getFindYourPerfectCoffeePage() {
@@ -99,6 +107,18 @@ public class StarBucksHomePage extends BasePage {
 		mouseOver.click().perform();;
 		
 		return new FindYourPerfectCoffeePage(getDriver());
+		
+	}
+	
+	public GiftCardsPage getGiftCardPage() {
+		
+		mouseOver = new Actions(getDriver());
+		
+		mouseOver.moveToElement(tabGift);
+		mouseOver.moveToElement(GiftbyEmail);
+		mouseOver.click().perform();
+		
+		return new GiftCardsPage(getDriver());
 		
 	}
 

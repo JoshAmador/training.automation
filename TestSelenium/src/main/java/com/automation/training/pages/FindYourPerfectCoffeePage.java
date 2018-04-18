@@ -1,5 +1,7 @@
 package com.automation.training.pages;
 
+import java.sql.Driver;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -10,6 +12,8 @@ import com.automation.training.MyDriver;
 
 public class FindYourPerfectCoffeePage extends BasePage{
 
+	FindYourPerfectCoffeePage findYourPerfectCoffeePage;
+	
 	Actions mouseOver = new Actions(getDriver());
 	
 	public FindYourPerfectCoffeePage(WebDriver driver) {
@@ -49,32 +53,74 @@ public class FindYourPerfectCoffeePage extends BasePage{
 		return boton1Q4;
 	}
 	
-	@FindBy(id="find-my-coffee")
-	private WebElement botonFindMyCoffee;
+//	FindBy de opcion 2 
 	
-	@FindBy(id="question1")
-	private WebElement preguntas1;
+	@FindBy(xpath="//*[@id='question1']/button[2]")
+	private WebElement boton2Q1;
 	
-	@FindBy(id="question2")
-	private WebElement preguntas2;
+	@FindBy(xpath="//*[@id='question2']/button[2]")
+	private WebElement boton2Q2;
 	
-	@FindBy(id="light-questions")
-	private WebElement preguntas3;
+	@FindBy(xpath="//*[@id=\"medium-questions\"]/button[2]")
+	private WebElement boton2Q3;
 	
-	@FindBy(id="question4")
-	private WebElement preguntas4;
+	@FindBy(xpath="//*[@id='question4']/button[2]")
+	private WebElement boton2Q4;
 	
-	@FindBy(id="masthead")
-	private WebElement mastHeadPant;
+//	WebElements de opcion 2 
 	
-	@FindBy(id="results-headline")
-	private WebElement cafeSelecciona;
+	public WebElement getBoton2Q1() {
+		return boton2Q1;
+	}
+	
+	public WebElement getBoton2Q2() {
+		return boton2Q2;
+	}
+	
+	public WebElement getBoton2Q3() {
+		return boton2Q3;
+	}
+	
+	public WebElement getBoton2Q4() {
+		return boton2Q4;
+	}
+	
+//	FindBy de opcion 3 
+	
+	@FindBy(xpath="//*[@id='question1']/button[3]")
+	private WebElement boton3Q1;
+	
+	@FindBy(xpath="//*[@id='question2']/button[3]")
+	private WebElement boton3Q2;
+	
+	@FindBy(xpath="//*[@id=\'dark-questions\']/button[3]")
+	private WebElement boton3Q3;
+	
+	@FindBy(xpath="//*[@id='question4']/button[3]")
+	private WebElement boton3Q4;
+	
+//	WebElements de opcion 3 
+	
+	public WebElement getBoton3Q1() {
+		return boton3Q1;
+	}
+	
+	public WebElement getBoton3Q2() {
+		return boton3Q2;
+	}
+	
+	public WebElement getBoton3Q3() {
+		return boton3Q3;
+	}
+	
+	public WebElement getBoton3Q4() {
+		return boton3Q4;
+	}
 	
 	//WebElement cafe seleccionado
 	
-	public WebElement cafeSelecciona() {
-		return cafeSelecciona;
-	}
+	@FindBy(id="find-my-coffee")
+	private WebElement botonFindMyCoffee;
 	
 	@FindBy(id="back-top")
 	private WebElement botonBack;
@@ -83,37 +129,67 @@ public class FindYourPerfectCoffeePage extends BasePage{
 		return botonBack;
 	}
 	
-	public void selectOptionsQuestion1() throws InterruptedException {
-		mouseOver = new Actions(getDriver());
+	//WebElement cafe sugerido
 	
-		Thread.sleep(5000);
-		
-		mouseOver.moveToElement(boton1Q1);
+	@FindBy(id="results-headline")
+	private WebElement cafeSugerido;
+	
+	public WebElement getCafeSugerido() {
+		return cafeSugerido;
+	}
+	
+	public void selectOptionsQuestions() throws InterruptedException {
+		mouseOver = new Actions(getDriver());
+			
+		mouseOver.moveToElement(boton3Q1);
 		mouseOver.click();
 
-		mouseOver.moveToElement(boton1Q2);
+		mouseOver.moveToElement(boton3Q2);
 		mouseOver.click();
 
-		mouseOver.moveToElement(boton1Q3);
+		mouseOver.moveToElement(boton3Q3);
 		mouseOver.click();
 
-		mouseOver.moveToElement(boton1Q4);
+		mouseOver.moveToElement(boton3Q4);
 		mouseOver.click();
-		
-		mouseOver.moveToElement(botonFindMyCoffee);
-		mouseOver.click();
-		
-		mouseOver.moveToElement(botonBack);
-		
-		mouseOver.click();
-		
-		mouseOver.pause(1000);
 		
 		mouseOver.perform();
-		
-		Thread.sleep(3000);
 
+	}
+	
+	public FindYourPerfectCoffeePage searchCoffee() throws InterruptedException {
+		Thread.sleep(5000);
+		mouseOver.moveToElement(botonFindMyCoffee);
+		mouseOver.click();
+		mouseOver.perform();
 		
+		return this;
+	}
+		
+	public FindYourPerfectCoffeePage clickBotones(WebElement boton1, WebElement boton2, WebElement boton3, WebElement boton4) {
+		
+		mouseOver.moveToElement(boton1);
+		mouseOver.click(boton1);
+		
+		mouseOver.moveToElement(boton2);
+		mouseOver.click(boton2);
+		
+		mouseOver.moveToElement(boton3);
+		mouseOver.click(boton3);
+		
+		mouseOver.moveToElement(boton4);
+		mouseOver.click(boton4);
+		
+		return this;
+	}
+	
+	public FindYourPerfectCoffeePage regresarCafe() throws InterruptedException {
+		Thread.sleep(5000);
+		mouseOver.moveToElement(botonBack);
+		mouseOver.click();
+		mouseOver.perform();
+		
+		return this;
 	}
 	
 }

@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" total="9" passed="8">
+<testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="My test suite" duration-ms="11290" started-at="2018-04-13T07:38:33Z" finished-at="2018-04-13T07:38:45Z">
+  <suite name="My test suite" duration-ms="17355" started-at="2018-04-18T22:19:25Z" finished-at="2018-04-18T22:19:42Z">
     <groups>
     </groups>
-    <test name="StarBucks home page" duration-ms="11290" started-at="2018-04-13T07:38:33Z" finished-at="2018-04-13T07:38:45Z">
+    <test name="StarBucks home page" duration-ms="17355" started-at="2018-04-18T22:19:25Z" finished-at="2018-04-18T22:19:42Z">
       <class name="com.automation.training.tests.StarBucksTests">
-        <test-method status="PASS" signature="beforeSuite(java.lang.String)[pri:0, instance:com.automation.training.tests.StarBucksTests@4883b407]" name="beforeSuite" is-config="true" duration-ms="8348" started-at="2018-04-13T02:38:25Z" finished-at="2018-04-13T02:38:33Z">
+        <test-method status="PASS" signature="beforeSuite(java.lang.String)[pri:0, instance:com.automation.training.tests.StarBucksTests@146ba0ac]" name="beforeSuite" is-config="true" duration-ms="4535" started-at="2018-04-18T17:19:20Z" finished-at="2018-04-18T17:19:25Z">
           <params>
             <param index="0">
               <value>
@@ -18,171 +18,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeSuite -->
-        <test-method status="PASS" signature="testStarBucksHomeDataProvider(java.lang.String, java.lang.String)[pri:0, instance:com.automation.training.tests.StarBucksTests@4883b407]" name="testStarBucksHomeDataProvider" duration-ms="2441" started-at="2018-04-13T02:38:35Z" data-provider="TabData" finished-at="2018-04-13T02:38:38Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[COFFEE]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[COFFEE]]>
-              </value>
-            </param>
-          </params>
+        <test-method status="PASS" signature="test3()[pri:0, instance:com.automation.training.tests.StarBucksTests@146ba0ac]" name="test3" duration-ms="17337" started-at="2018-04-18T17:19:25Z" finished-at="2018-04-18T17:19:42Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testStarBucksHomeDataProvider -->
-        <test-method status="PASS" signature="testStarBucksHomeDataProvider(java.lang.String, java.lang.String)[pri:0, instance:com.automation.training.tests.StarBucksTests@4883b407]" name="testStarBucksHomeDataProvider" duration-ms="1124" started-at="2018-04-13T02:38:38Z" data-provider="TabData" finished-at="2018-04-13T02:38:39Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[TEA]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[TEA]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testStarBucksHomeDataProvider -->
-        <test-method status="PASS" signature="testStarBucksHomeDataProvider(java.lang.String, java.lang.String)[pri:0, instance:com.automation.training.tests.StarBucksTests@4883b407]" name="testStarBucksHomeDataProvider" duration-ms="1104" started-at="2018-04-13T02:38:39Z" data-provider="TabData" finished-at="2018-04-13T02:38:40Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[MENU]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[MENU]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testStarBucksHomeDataProvider -->
-        <test-method status="PASS" signature="testStarBucksHomeDataProvider(java.lang.String, java.lang.String)[pri:0, instance:com.automation.training.tests.StarBucksTests@4883b407]" name="testStarBucksHomeDataProvider" duration-ms="1008" started-at="2018-04-13T02:38:40Z" data-provider="TabData" finished-at="2018-04-13T02:38:41Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[COFFEEHOUSE]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[COFFEEHOUSE]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testStarBucksHomeDataProvider -->
-        <test-method status="PASS" signature="testStarBucksHomeDataProvider(java.lang.String, java.lang.String)[pri:0, instance:com.automation.training.tests.StarBucksTests@4883b407]" name="testStarBucksHomeDataProvider" duration-ms="715" started-at="2018-04-13T02:38:41Z" data-provider="TabData" finished-at="2018-04-13T02:38:41Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[SOCIAL IMPACT]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[SOCIAL IMPACT]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testStarBucksHomeDataProvider -->
-        <test-method status="PASS" signature="testStarBucksHomeDataProvider(java.lang.String, java.lang.String)[pri:0, instance:com.automation.training.tests.StarBucksTests@4883b407]" name="testStarBucksHomeDataProvider" duration-ms="1049" started-at="2018-04-13T02:38:41Z" data-provider="TabData" finished-at="2018-04-13T02:38:43Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[STARBUCKS REWARDS]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[STARBUCKS REWARDS]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testStarBucksHomeDataProvider -->
-        <test-method status="PASS" signature="testStarBucksHomeDataProvider(java.lang.String, java.lang.String)[pri:0, instance:com.automation.training.tests.StarBucksTests@4883b407]" name="testStarBucksHomeDataProvider" duration-ms="1036" started-at="2018-04-13T02:38:43Z" data-provider="TabData" finished-at="2018-04-13T02:38:44Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[BLOG]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[BLOG]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testStarBucksHomeDataProvider -->
-        <test-method status="PASS" signature="testStarBucksHomeDataProvider(java.lang.String, java.lang.String)[pri:0, instance:com.automation.training.tests.StarBucksTests@4883b407]" name="testStarBucksHomeDataProvider" duration-ms="1069" started-at="2018-04-13T02:38:44Z" data-provider="TabData" finished-at="2018-04-13T02:38:45Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[GIFT CARDS]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[GIFT CARDS]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testStarBucksHomeDataProvider -->
-        <test-method status="FAIL" signature="test2(java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object, java.lang.String)[pri:0, instance:com.automation.training.tests.StarBucksTests@4883b407]" name="test2" duration-ms="0" started-at="2018-04-13T02:38:45Z" data-provider="Tabdata2" finished-at="2018-04-13T02:38:45Z">
-          <exception class="org.testng.TestNGException">
-            <message>
-              <![CDATA[
-Method public void com.automation.training.tests.StarBucksTests.test2(java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.String) throws java.lang.InterruptedException requires a @DataProvider named : Tabdata2]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.testng.TestNGException: 
-Method public void com.automation.training.tests.StarBucksTests.test2(java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.String) throws java.lang.InterruptedException requires a @DataProvider named : Tabdata2
-	at org.testng.internal.Parameters.findDataProvider(Parameters.java:265)
-	at org.testng.internal.Parameters.handleParameters(Parameters.java:414)
-	at org.testng.internal.Invoker.handleParameters(Invoker.java:1383)
-	at org.testng.internal.Invoker.createParameters(Invoker.java:1075)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1180)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
-	at org.testng.TestRunner.privateRun(TestRunner.java:767)
-	at org.testng.TestRunner.run(TestRunner.java:617)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.testng.TestNGException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test2 -->
-        <test-method status="PASS" signature="afterSuite()[pri:0, instance:com.automation.training.tests.StarBucksTests@4883b407]" name="afterSuite" is-config="true" duration-ms="848" started-at="2018-04-13T02:38:45Z" finished-at="2018-04-13T02:38:46Z">
+        </test-method> <!-- test3 -->
+        <test-method status="PASS" signature="afterSuite()[pri:0, instance:com.automation.training.tests.StarBucksTests@146ba0ac]" name="afterSuite" is-config="true" duration-ms="744" started-at="2018-04-18T17:19:42Z" finished-at="2018-04-18T17:19:43Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterSuite -->

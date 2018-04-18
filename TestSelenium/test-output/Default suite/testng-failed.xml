@@ -5,9 +5,8 @@
     <classes>
       <class name="com.automation.training.tests.StarBucksTests">
         <methods>
-          <include name="testStarBucksHomeDataProvider"/>
-          <include name="test2"/>
           <include name="afterSuite"/>
+          <include name="test3"/>
         </methods>
       </class> <!-- com.automation.training.tests.StarBucksTests -->
     </classes>
